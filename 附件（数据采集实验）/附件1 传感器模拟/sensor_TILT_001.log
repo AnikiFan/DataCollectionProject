@@ -83,3 +83,6 @@
 2024-11-29 09:19:11,730 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Warning, Data: {'tilt_x': -39.15, 'tilt_y': 65.14}
 2024-11-29 09:19:16,748 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Warning, Data: {'tilt_x': 68.48, 'tilt_y': -81.61}
 2024-11-29 09:19:21,867 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Warning, Data: {'tilt_x': -16.61, 'tilt_y': -36.57}
+2024-11-29 09:25:21,112 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Normal, Data: {'tilt_x': -5.15, 'tilt_y': -43.44}
+2024-11-29 09:25:26,116 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Normal, Data: {'tilt_x': 59.49, 'tilt_y': -77.46}
+2024-11-29 09:25:31,197 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Status: Normal, Data: {'tilt_x': 75.11, 'tilt_y': 34.17}

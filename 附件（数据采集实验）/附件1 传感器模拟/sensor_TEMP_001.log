@@ -89,3 +89,6 @@
 2024-11-29 09:19:11,721 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Fault, Data: {'temperature': 30.49}
 2024-11-29 09:19:16,764 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Fault, Data: {'temperature': 23.53}
 2024-11-29 09:19:21,946 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Fault, Data: {'temperature': 20.99}
+2024-11-29 09:25:21,099 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Normal, Data: {'temperature': 20.56}
+2024-11-29 09:25:26,116 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Normal, Data: {'temperature': 3.21}
+2024-11-29 09:25:31,272 - Sensor_TEMP_001 - INFO - Sensor ID: TEMP_001, Sensor Type: Temperature, Status: Normal, Data: {'temperature': 13.23}

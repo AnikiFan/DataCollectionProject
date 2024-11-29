@@ -55,6 +55,8 @@ class Sensor:
             return f"H:{sensor_data['humidity']}".encode('utf-8')
         elif self.sensor_type == "Light":
             return f"L:{sensor_data['light']}".encode('utf-8')
+        elif self.sensor_type == "Vibration":
+            return f"V:{sensor_data['vibration']}".encode('utf-8')
         else:
             raise ValueError("Unsupported sensor type")
 
@@ -79,6 +81,10 @@ class Sensor:
         elif sensor_type == "Light":
             return {
                 "light": round(random.uniform(0, 1000), 2)
+            }
+        elif sensor_type == "Vibration":
+            return {
+                "vibration": round(random.uniform(0, 1), 2)
             }
         else:
             raise ValueError("Unsupported sensor type")

@@ -83,3 +83,6 @@
 2024-11-29 09:19:11,730 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 461.29}
 2024-11-29 09:19:16,796 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 562.69}
 2024-11-29 09:19:21,899 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 500.17}
+2024-11-29 09:25:21,108 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 847.88}
+2024-11-29 09:25:26,116 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 805.35}
+2024-11-29 09:25:31,379 - Sensor_PRESS_002 - INFO - Sensor ID: PRESS_002, Sensor Type: Pressure, Status: Normal, Data: {'pressure': 347.65}

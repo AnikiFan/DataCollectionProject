@@ -83,3 +83,6 @@
 2024-11-29 09:19:11,729 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 7.83}
 2024-11-29 09:19:16,748 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 34.9}
 2024-11-29 09:19:21,883 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 49.07}
+2024-11-29 09:25:21,099 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 2.86}
+2024-11-29 09:25:26,132 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 38.0}
+2024-11-29 09:25:31,436 - Sensor_TEMP_002 - INFO - Sensor ID: TEMP_002, Sensor Type: Temperature, Status: Warning, Data: {'temperature': 26.69}
