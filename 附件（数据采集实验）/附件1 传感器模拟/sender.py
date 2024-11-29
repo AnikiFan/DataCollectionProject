@@ -4,6 +4,7 @@ import socket
 import logging
 import time
 import configparser
+import threading
 
 class Sensor:
     def __init__(self, sensor_type, sensor_id):
@@ -90,6 +91,14 @@ class Sensor:
         status_message = f"Sensor ID: {self.sensor_id}, Sensor Type: {self.sensor_type}, Status: {self.status}, Data: {sensor_data}"
         self.logger.info(status_message)
 
+def work(sensor,sock,server_address):
+    print('init')
+    while True:
+        frame = sensor.generate_frame()
+        print(f"Generated Frame from {sensor.sensor_id}: {frame.hex()}")
+        sock.sendto(frame, server_address)
+        time.sleep(5)
+
 def main():
     config = configparser.ConfigParser()
     config.read('sensors.ini')
@@ -103,13 +112,13 @@ def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     server_address = ('localhost', 10000)
 
+    for sensor in sensors:
+        thread = threading.Thread(target=work,args=(sensor,sock,server_address),daemon=True)
+        thread.start()
+        print("active thread count:",threading.active_count())
+    
     while True:
-        for sensor in sensors:
-            frame = sensor.generate_frame()
-            print(f"Generated Frame from {sensor.sensor_id}: {frame.hex()}")
-            sock.sendto(frame, server_address)
-        
-        time.sleep(5)
+        pass
 
 if __name__ == "__main__":
     main()
