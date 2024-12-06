@@ -1,0 +1,4 @@
+2024-12-06 20:57:53,294 - Sensor_VIBRATION_001 - INFO - Sensor ID: VIBRATION_001, Sensor Type: Vibration, Location: ROOM_102, Status: Normal, Data: {'vibration': 0.48}
+2024-12-06 20:57:53,294 - Sensor_VIBRATION_001 - INFO - Sensor ID: VIBRATION_001, Sensor Type: Vibration, Location: ROOM_102, Status: Normal, Data: {'vibration': 0.48}
+2024-12-06 20:57:53,296 - Sensor_VIBRATION_001 - INFO - Sensor ID: VIBRATION_001, Sensor Type: Vibration, Location: ROOM_101, Status: Normal, Data: {'vibration': 0.57}
+2024-12-06 20:57:53,296 - Sensor_VIBRATION_001 - INFO - Sensor ID: VIBRATION_001, Sensor Type: Vibration, Location: ROOM_101, Status: Normal, Data: {'vibration': 0.57}

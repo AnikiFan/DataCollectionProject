@@ -1,0 +1,1 @@
+2024-12-06 20:57:53,295 - Sensor_TILT_001 - INFO - Sensor ID: TILT_001, Sensor Type: Tilt, Location: ROOM_101, Status: Normal, Data: {'tilt_x': 66.87, 'tilt_y': 35.72}
