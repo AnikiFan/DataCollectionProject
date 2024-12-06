@@ -36,7 +36,7 @@ def get_weather_from_internet(city):
     
     if response.status_code != 200:
         raise ValueError("Failed to retrieve content")
-    
+
     pattern = re.compile(r'var observe24h_data = (.*?);')
     match = pattern.search(response.text)
     
