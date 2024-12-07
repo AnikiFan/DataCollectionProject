@@ -28,9 +28,9 @@ def get_weather():
 
 
 if __name__ == '__main__':
-    schedule.every(30).seconds.do(get_weather)
+    schedule.every(45).minutes.do(get_weather)
     stop_run_continuously = run_continuously()
-    time.sleep(60*60)
+    time.sleep(60*60*24)
     stop_run_continuously.set()
 
 

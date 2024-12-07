@@ -23,19 +23,19 @@ evaluation['status'] = evaluation.evaluation.apply(lambda x: 'Danger' if x>=5 el
 with header1:
     st.header('建筑结构安全监控系统')
 with header2:
-    st.metric('location','上海嘉定区')
+    st.metric('Location','上海嘉定区')
 st.subheader('总体信息')
 c1,c2,c3,c4=st.columns(4)
 with c1:
-    st.metric('#rooms',rooms_count)
-    st.metric('#normals',normal_count)
-    st.metric('#warnings',warning_count)
-    st.metric('#dangers',danger_count)
+    st.metric('#Room',rooms_count)
+    st.metric('#Normal',normal_count)
+    st.metric('#Warning',warning_count)
+    st.metric('#Danger',danger_count)
 with c2:
-    st.metric('#sensors', sensors_count)
-    st.metric('#normal', sum(sensors.status=='Normal'))
-    st.metric('#warning',sum(sensors.status=='Warning'))
-    st.metric('#fault',sum(sensors.status=='Fault'))
+    st.metric('#Sensor', sensors_count)
+    st.metric('#Normal', sum(sensors.status=='Normal'))
+    st.metric('#Warning',sum(sensors.status=='Warning'))
+    st.metric('#Fault',sum(sensors.status=='Fault'))
 with c3:
     st.write('房间列表',evaluation.loc[:,['status']])
 with c4:
@@ -180,10 +180,15 @@ def evaluate(row):
     """)
 
 weather = pd.read_sql_query('select * from weather_data ORDER BY timestamp DESC LIMIT 20',conn)
-weather_info,weather_chart=st.columns([1,4])
+weather_info,weather_chart=st.columns([1.5,4])
 with weather_info:
-    st.metric('当前天气',weather.loc[0,'description'])
-    st.metric('风向',weather.loc[0,'wind_direction'])
-    st.metric('风力',weather.loc[0,'wind_power'])
+    st.metric('更新时间',weather.loc[0,'timestamp'])
+    weather1,weather2,weather3 = st.columns(3)
+    with weather1:
+        st.metric('当前天气',weather.loc[0,'description'])
+    with weather2:
+        st.metric('风向',weather.loc[0,'wind_direction'])
+    with weather3:
+        st.metric('风力',weather.loc[0,'wind_power'])
 with weather_chart:
     st.line_chart(weather.set_index('timestamp').loc[:,['temperature','humidity']])
